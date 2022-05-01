@@ -19,7 +19,9 @@ class StudentModel(models.Model):
     id_string = models.CharField(max_length=20, unique=True)
     school = models.ForeignKey(SchoolModel, related_name="students", 
         null=False, blank=False, on_delete=models.CASCADE)
-
+    
+    address = models.TextField(null=True,blank=True)
+    created_at = models.TimeField(auto_now_add=True, auto_now=False)
 
     @property
     def full_name(self):
