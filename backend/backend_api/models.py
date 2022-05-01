@@ -21,6 +21,11 @@ class StudentModel(models.Model):
         null=False, blank=False, on_delete=models.CASCADE)
 
 
+    @property
+    def full_name(self):
+        return f"{self.first_name} {self.last_name}"
+
+    
     def _get_id_string(self) -> str:
         return generate_unique(20) if not self.id_string else self.id_string
 
@@ -30,3 +35,5 @@ class StudentModel(models.Model):
             raise ValidationError("Student limit reached")
         super().save(*args, **kwargs)
 
+    def __str__(self) -> str:
+        return self.full_name

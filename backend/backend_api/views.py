@@ -11,3 +11,10 @@ class SchoolViewSet(viewsets.ModelViewSet):
 class StudentViewSet(viewsets.ModelViewSet):
     queryset = StudentModel.objects.all()
     serializer_class = StudentSerializer
+
+
+class StudentNestedViewSet(viewsets.ModelViewSet):
+    serializer_class = StudentSerializer
+
+    def get_queryset(self):
+         return StudentModel.objects.filter(school=self.kwargs["schools_pk"])
