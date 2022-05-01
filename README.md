@@ -14,3 +14,9 @@ would require a separate removing strategy for students
 ## Comments and Time taken for Step 3
 - Total time take approximately 60 mins
 - Mostly due doing researching nested routers
+
+## Bonus Tasks
+- Added cusom migration to fake school and students
+- Added django-filter backend
+    - I can cretae custome filters but the project scope is too small for that
+    - Added filters on StudentViewSet and StudentNestedViewSet
