@@ -1,8 +1,8 @@
 # manatel-test
 Django Application for Mantel Test
 
-## Comments and Time taken for Step 2
-- Total time take approximately 60 mins
+## Comments and Time taken for Step 1
+- Total time take approximately 40 mins
 - Mostly due to setting up docker and pipenv
 - Added code to prevent users from decreasing total students since that
 would require a separate removing strategy for students
