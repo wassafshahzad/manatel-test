@@ -1,5 +1,9 @@
 # manatel-test
-Django Application for Mantel Test
+
+## Getting Sdtarted
+- If you have docker installed, run docker-compose up to get the database up and running
+- CD into the backend/backend directory and run 'cp .env_example .env' to get default configurations
+- Run server
 
 ## Comments and Time taken for Step 1
 - Total time take approximately 40 mins
